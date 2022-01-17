@@ -1,0 +1,26 @@
+package quiz;
+import java.util.Scanner;
+
+public class Quiz17012022 {
+	public static void main(String[] main) {
+		Scanner sc=new Scanner(System.in);
+		double ttlClass, attClass, perClass;
+		
+		
+		System.out.println("Enter the number of classes held:");
+		ttlClass=sc.nextDouble();
+		System.out.println("Enter the number of classes attended");
+		attClass=sc.nextDouble();
+		perClass=(attClass/ttlClass)*100;
+		System.out.println(String.format("%.2f",perClass));
+		
+		if (perClass>=75) {
+			System.out.println("Student is allowed to sit the exam");
+		}
+		else {
+			System.out.println("Student is not allowed to sit the exam");
+		}
+		
+	}
+
+}
